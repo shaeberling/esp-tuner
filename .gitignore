@@ -1,0 +1,30 @@
+# ESP-IDF build output and generated config (sdkconfig.defaults is the source)
+build/
+sdkconfig
+sdkconfig.old
+
+# Fetched by the component manager (versions pinned in dependencies.lock)
+managed_components/
+dependencies.lock.bak
+
+# Host test binaries
+test/test_pitch
+test/analyze_wav
+*.o
+*.dSYM/
+
+# Python
+__pycache__/
+*.pyc
+
+# Captures from tools/snap.py and tools/rec.py, if dropped in the tree
+/*.png
+/*.wav
+
+# Editors and OS
+.vscode/
+.idea/
+.cache/
+.clangd
+compile_commands.json
+.DS_Store

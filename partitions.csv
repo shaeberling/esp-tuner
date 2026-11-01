@@ -1,0 +1,6 @@
+# Name,   Type, SubType, Offset,  Size
+# 0x9000-0x3AFFF is left alone on purpose: the Watcher keeps its factory data
+# (nvsfactory) there, and Muse firmware its partition table and NVS (pairing,
+# Wi-Fi), so flashing the tuner doesn't touch either.
+nvs,      data, nvs,     0x3B000, 0x5000,
+factory,  app,  factory, 0x40000, 4M,
